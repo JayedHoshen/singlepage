@@ -1,0 +1,181 @@
+/* Nasim's CSS Tutorials
+   Part:28,29,30,31
+*/
+*{margin:0px;padding:0px}
+body{
+	font-family:arial;
+	font-size:15px;
+	line-height:25px;
+	color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:arial black;
+}
+img{
+	max-width:100%;
+}
+nav{
+	background:white;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	border-bottom:5px solid orange;
+	position: fixed;
+	z-index: 25;
+}
+#menudiv{
+	width:1170px;
+	margin:auto;
+	overflow: hidden;
+	/* padding: 15px 0px; */
+}
+div#logo {
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+}
+#menu_inner{
+	float:right;
+	width: 700px;
+	margin-top: 20px;
+}
+#main_menu{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	float: right;
+}
+#main_menu li{
+	display:inline-block;
+	padding: 5px 0px;
+}
+#main_menu li a{
+	text-decoration:none;
+	text-transform:uppercase;
+	padding: 10px 20px;
+	font-size:18px;
+	color:#444;
+	transition:0.5s;
+}
+#main_menu li a:hover{
+	border-bottom:2px solid orange;
+	color:orange;
+}
+div#section_title{
+	text-align:center;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+#service_section div#section_title {
+    padding-top: 20px;
+    color: white;
+}
+div#section_title h1 span {
+    color: #ff5722eb;
+}
+section{
+	padding: 50px 0px;
+	overflow: hidden;
+	width: 100%;
+}
+section#service_section {
+    background:#05051cc2;
+}
+#allBlocks{
+	width: 1170px;
+	margin: auto;
+}
+#service_block{
+	background-color: #ffffff;
+	width: 335px;
+	padding:15px;
+	overflow: hidden;
+	line-height:20px;
+	display: inline-block;
+	border: 1px solid #f0ebeb;
+	margin: 10px;
+	transition:all 1s;
+	animation-name:xoomInMyBoxes;
+	animation-duration:1s;
+}
+#service_block:hover{
+	background:transparent;
+	color:white;
+	cursor:pointer;
+	transform:translateY(-20px);
+}
+#service_block:hover  i{
+	color:white;
+}
+#service_block:hover #rightContent h2{
+	transform:translateX(100px)
+}
+@keyframes xoomInMyBoxes{
+	from{transform:scale(0)}
+	to{transform:scale(1)}
+}
+#leftIcon,#rightContent{
+	display:inline-block;
+}
+#leftIcon{
+	width:70px;
+	font-size:50px;
+	float:left;
+	margin-top: 20px;
+	color: #FF5722;
+}
+#rightContent{
+	width:250px;
+}
+#rightContent h2{
+	margin-bottom:10px;
+	font-size:18px;
+	transition:transform 1s;
+}
+#rightContent p{
+	font-size:13px;
+}
+#about_contents_all{
+	padding:30px 0px;
+	overflow: hidden;
+}
+.about_image_inner{
+	float:left;
+	overflow:hidden;
+}
+div#about_image {
+    width: 400px;
+    border: 1px solid #fff;
+    background: #ddd;
+    box-shadow: -1px 16px 50px -22px black;
+	transition:1s;
+}
+div#aboutRight {
+    width: 700px;
+	float:right;
+}
+div#aboutRight h2 {
+    margin-bottom: 30px;
+    padding-bottom:10px;
+    border-bottom: 2px solid #ddd;
+}
+div#aboutRight p{
+	font-size:16px;
+	color:#888;
+}
+#aboutRight,#about_image{
+	display:inline-block;
+}
+#about_image:hover{
+	transform:scale(1.5);
+}
+footer{
+	background:#333;
+	color:white;
+	font-size:20px;
+	padding: 20px 0px;
+}
+#footerArea{
+	padding:10px;
+	text-align: center;
+}
